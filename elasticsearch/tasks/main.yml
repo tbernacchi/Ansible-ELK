@@ -1,0 +1,28 @@
+---
+##Install elastic 7.6.1
+- name: Install elastic 7.6.1
+  yum: name=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.1-x86_64.rpm
+
+##Template elasticsearch
+- name: Template a file to /etc/elasticsearch/elasticsearch.yml
+  template:
+    src: ../templates/elasticsearch.yml.j2
+    dest: /etc/elasticsearch/elasticsearch.yml
+    owner: root
+    group: elasticsearch
+    mode: '0660'    
+
+##Changing owner /etc/elasticsearch
+- name: Change ownership /etc/elasticsearch
+  file:
+    path: /etc/elasticsearch
+    state: directory
+    recurse: yes
+    owner: elasticsearch
+    group: elasticsearch 
+
+##Start Elasticsearch
+- name: Starting Elasticsearch
+  service:
+   name: elasticsearch
+   state: started

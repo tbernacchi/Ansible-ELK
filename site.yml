@@ -2,7 +2,7 @@
 #
 # Playbook to install the ELK stack + Beats
 #
-- hosts: elkservers
+- hosts: all
   remote_user: vagrant
   become: yes
   become_user: root
@@ -10,5 +10,4 @@
   - { role: java }
   - { role: elasticsearch }
   - { role: kibana }
-#  - { role: metricbeat }
-
+  - { role: logstash}

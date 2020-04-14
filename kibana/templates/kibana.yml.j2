@@ -1,0 +1,4 @@
+server.host: "{{ ansible_eth1.ipv4.address }}"
+server.port: 5601
+elasticsearch.hosts: ["http://{{ ansible_eth1.ipv4.address }}:{{ elastic_port }}"] 
+

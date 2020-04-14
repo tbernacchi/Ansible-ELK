@@ -1,0 +1,6 @@
+---
+# vars file for elasticsearch 
+path_data: '/var/lib/elasticsearch'
+path_logs: '/var/lib/elasticsearch'
+path_repo: '/elasticsearch-backup'
+cluster_name: 'elk-tadeu-lab' 
