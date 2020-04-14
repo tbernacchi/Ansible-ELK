@@ -1,0 +1,9 @@
+node.data: true
+node.master: true
+path.data: {{ path_data }} 
+path.logs: {{ path_logs }} 
+network.host: ["{{ ansible_eth1.ipv4.address }}"]
+http.port: 9200
+cluster.initial_master_nodes: ["{{ ansible_eth1.ipv4.address }}"]
+cluster.name: {{ cluster_name }} 
+#path.repo : {{ path_repo }}
