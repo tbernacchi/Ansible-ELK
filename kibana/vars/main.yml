@@ -1,3 +1,0 @@
----
-# vars file for kibana
-elastic_port: '9200'
