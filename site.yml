@@ -7,7 +7,8 @@
   become: yes
   become_user: root
   roles:
-  - { role: java }
-  - { role: elasticsearch }
-  - { role: kibana }
-  - { role: logstash}
+  - { role: java, tags: java }
+  - { role: elasticsearch, tags: elasticsearch }
+  - { role: kibana, tags: kibana }
+  - { role: logstash, tags: logstash }
+  - { role: filebeat, tags: filebeat }

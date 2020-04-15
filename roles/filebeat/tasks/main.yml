@@ -1,0 +1,4 @@
+---
+##Install filebeat 7.6.1
+- name: Install filebeat 7.6.1
+  yum: name=https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-x86_64.rpm

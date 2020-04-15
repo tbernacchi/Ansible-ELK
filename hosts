@@ -1,6 +1,8 @@
 [standalone]
-192.168.33.101 ansible_user=vagrant ansible_password=vagrant ansible_python_interpreter=/bin/python
+192.168.33.101 ansible_user=vagrant ansible_password=vagrant ansible_ssh_private_key_file=/Users/tadeu/vagrant/ELK/elk_standalone/.vagrant/machines/elastic01/virtualbox/private_key ansible_python_interpreter=/bin/python
 
-[nodes] 
-192.168.33.102 ansible_user=vagrant ansible_password=vagrant ansible_python_interpreter=/bin/python
+[nodefilebeat] 
+192.168.33.102 ansible_user=vagrant ansible_password=vagrant ansible_ssh_private_key_file=/Users/tadeu/vagrant/ELK/node_filebeat/.vagrant/machines/filebeat01/virtualbox/private_key ansible_python_interpreter=/bin/python
+
+[node3] 
 192.168.33.103 ansible_user=vagrant ansible_password=vagrant ansible_python_interpreter=/bin/python
