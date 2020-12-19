@@ -7,7 +7,7 @@
 ![Ansible](/.github/assets/img/elastic-stack.png)
 
 <div align=>
-	<img align="right" width="200px" src=/.github/assets/img/ansible-logo-vector.png>
+	<img align="right" width="200px" src=/.github/assets/img/ansible-new-logo.png>
 </div> 
 
 ## Table of Contents
