@@ -4,7 +4,7 @@
 
 > My ELK stack on CentOS 7 using Ansible + Vagrant
 
-![Ansible](/.github/assets/img/elk-big-logo.png)
+![Ansible](/.github/assets/img/elastic-stack.png)
 
 <div align=>
 	<img align="right" width="200px" src=/.github/assets/img/ansible-logo-vector.png>
